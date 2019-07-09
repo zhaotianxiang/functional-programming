@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/zhaotianxiang/functional-programming#readme",
   "dependencies": {
+    "accounting": "^0.4.1",
     "ramda": "^0.26.1"
   }
 }

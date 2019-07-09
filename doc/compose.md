@@ -27,4 +27,7 @@ compose(compose(toUpperCase, head), reverse);
 
 ```
 
+### 组合的实质
+
+[组合结构](./compose.png)
 
