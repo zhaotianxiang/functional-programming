@@ -1,4 +1,3 @@
-require('../../support');
 const _ = require('ramda');
 const accounting = require('accounting');
 
