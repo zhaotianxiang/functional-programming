@@ -29,5 +29,10 @@ compose(compose(toUpperCase, head), reverse);
 
 ### 组合的实质
 
-[组合结构](https://github.com/zhaotianxiang/functional-programming/blob/master/doc/compose.png)
+<p align="left">
+  <img src="https://github.com/zhaotianxiang/functional-programming/blob/master/doc/compose1.png" width="1000"/>
+  <img src="https://github.com/zhaotianxiang/functional-programming/blob/master/doc/compose2.png" width="1000"/>
+</p>
+
+[组合结构]()
 
