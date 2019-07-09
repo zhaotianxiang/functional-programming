@@ -39,4 +39,4 @@ var g = function(x){ return x.length; };
 var f = function(x){ return x === 4; };
 var isFourLetterWord = compose(f, g);
 ```
-
+简单来说就是 g 的输出给了 f , g->f 首尾相接， 组合成一个新的函数， 再一次感受一元函数的强大吧。

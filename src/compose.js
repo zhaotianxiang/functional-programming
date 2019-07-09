@@ -19,10 +19,20 @@ const isLastInStock = function(cars) {
   return _.prop('in_stock', last_car);
 };
 
+console.log(_.last(CARS));
+
+console.log(_.prop('in_stock', _.last(CARS))); // prop 支撑 道具
+console.log(_.prop('horsepower', _.last(CARS)));
+
+// 解答
+const isLastInStockTest =  _.compose(_.prop('in_stock'), _.last);
+console.log(isLastInStockTest(CARS))
+
 // 练习 2:
 // ============
 // 使用 _.compose()、_.prop() 和 _.head() 获取第一个 car 的 name
-const nameOfFirstCar = undefined;
+const nameOfFirstCar = _.compose(_.prop('name'), _.head);
+console.log(nameOfFirstCar(CARS));
 
 
 // 练习 3:
@@ -40,9 +50,9 @@ const averageDollarValue = function(cars) {
 // ============
 // 使用 compose 写一个 sanitizeNames() 函数，返回一个下划线连接的小写字符串：例如：sanitizeNames(["Hello World"]) //=> ["hello_world"]。
 
-const _underscore = replace(/\W+/g, '_'); //<-- 无须改动，并在 sanitizeNames 中使用它
+// const _underscore = replace(/\W+/g, '_'); //<-- 无须改动，并在 sanitizeNames 中使用它
 
-const sanitizeNames = undefined;
+// const sanitizeNames = undefined;
 
 
 // 彩蛋 1:
