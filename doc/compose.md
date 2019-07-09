@@ -34,5 +34,9 @@ compose(compose(toUpperCase, head), reverse);
   <img src="https://github.com/zhaotianxiang/functional-programming/blob/master/doc/compose2.png" width="1000"/>
 </p>
 
-[组合结构]()
+```
+var g = function(x){ return x.length; };
+var f = function(x){ return x === 4; };
+var isFourLetterWord = compose(f, g);
+```
 
