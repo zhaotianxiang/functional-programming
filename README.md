@@ -71,7 +71,7 @@ var result = subtract(multiply(add(1,2), 3), 4)
 
 ## 正文开始
 
-1. [函数科里化](https://github.com/zhaotianxiang/functional-programming/blob/master/doc/curry.md)
+1. [函数柯里化](https://github.com/zhaotianxiang/functional-programming/blob/master/doc/curry.md)
 
 2. [函数组合](https://github.com/zhaotianxiang/functional-programming/blob/master/doc/compose.md)
 
