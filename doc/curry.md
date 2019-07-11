@@ -100,6 +100,38 @@ censored("Chocolate Rain");
 
 ```
 
+### 函数式优化写法
+
+1. 链式写法
+
+```javascript
+
+// 优化写法 (嗯，你没看错，这就是 lodash 的链式写法)
+
+const utils = {
+  chain(a) {
+    this._temp = a;
+    return this;
+  },
+  sum(b) {
+    this._temp += b;
+    return this;
+  },
+  sub(b) {
+    this._temp -= b;
+    return this;
+  },
+  value() {
+    const _temp = this._temp;
+    this._temp = undefined;
+    return _temp;
+  }
+};
+
+console.log(utils.chain(1).sum(2).sum(3).sub(4).value());
+
+```
+
 ### 例题
 
 1. 如何完成函数 multi(2)(3)(4) = 24 ?
