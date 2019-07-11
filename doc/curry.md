@@ -100,6 +100,70 @@ censored("Chocolate Rain");
 
 ```
 
+### 例题
+
+1. 如何完成函数 multi(2)(3)(4) = 24 ?
+
+```javascript
+function multi(n){
+  var fn = function(x) {
+    return multi(n * x);
+  };
+
+  fn.valueOf = function() {
+    return n;
+  };
+
+  return fn;
+}
+
+multi(1)(2)(3)(4) == 24; // true
+
+//函数的柯里化
+
+var baseFun = function(a, b, c){
+  return a * b * c;
+}
+var multi = _.curry(baseFun);
+
+
+// 完整版函数式
+
+function curry(fn){
+   var value;
+   var callback = function(next){
+      value = typeof value === "undefined" ? next : fn.apply(null,[value,next]);
+      return callback;
+   }
+   callback.valueOf = callback.toString = function(){
+     return value;
+   }
+   return callback
+}
+//加
+function add(x,y){
+  return x + y
+}
+//减
+function minus(x,y){
+  return x -y
+}
+//乘
+function multiply(x,y){
+  return x * y;
+}
+//除
+function divide(x,y){
+  return x / y;
+}
+curry(add)(2)(3)(4)(5)(6) //2+3+4+5+6=20
+curry(minus)(2)(3)(4)(5)(6) //2-3-4-5-6=-16
+curry(multiply)(2)(3)(4)(5)(6) //2*3*4*5*6=720
+curry(divide)(2)(3)(4)(5)(6) //2 / 3 / 4/ 5 /6 = 0.00555555...
+
+```
+
+
 
 ### 总结
 curry 函数用起来非常得心应手，每天使用它对我来说简直就是一种享受。它堪称手头必备工具，能够让函数式编程不那么繁琐和沉闷。
