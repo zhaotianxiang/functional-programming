@@ -1,10 +1,20 @@
 # 函数式编程 - (functional-programming)
 
+
+## Geting Strat
+
+1. [Currying](https://github.com/zhaotianxiang/functional-programming/blob/master/doc/curry.md)
+
+2. [Compose](https://github.com/zhaotianxiang/functional-programming/blob/master/doc/compose.md)
+
+3. [Lambda Calculus](https://github.com/zhaotianxiang/functional-programming/blob/master/doc/lambda.calculus.md)
+
+
 ### 概述
 
 函数式编程是一种编程范式， 也是结构化编程的一种，主要是把计算过程写成一系列嵌套的函数调用。
 
- > 例1. ( 1 + 2 ) \* 3 4 4 
+ > ( 1 + 2 ) \* 3 4 4 
 
 传统编程:
 
@@ -19,7 +29,9 @@ var c = b - 4;
 函数式编程:
 
 ```javascript
+
 var result = subtract(multiply(add(1,2), 3), 4)
+
 ```
 
 核心是: **将计算过程写成函数， 没有任何中间变量。**
@@ -62,16 +74,8 @@ var result = subtract(multiply(add(1,2), 3), 4)
 
  > add(1,2).multiply(3).subtract(4) 
 
-##### 3.每一个函数当成是一个单元， 易于测试。
+##### 3. 函数当成是一个单元易于测试。
 
-##### 4. 天然可并发, 无死锁。
+##### 4. 天然可并发无死锁。
 
-##### 5. 代码热升级， 运行状态下升级代码。
-
-
-## 正文开始
-
-1. [函数柯里化](https://github.com/zhaotianxiang/functional-programming/blob/master/doc/curry.md)
-
-2. [函数组合](https://github.com/zhaotianxiang/functional-programming/blob/master/doc/compose.md)
-
+##### 5. 代码热升级运行状态下升级代码。
