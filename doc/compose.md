@@ -37,6 +37,9 @@ compose(compose(toUpperCase, head), reverse);
   <img src="https://github.com/zhaotianxiang/functional-programming/blob/master/imge/compose2.png" width="1000"/>
 </p>
 
+我们定义的compose就像双面胶一样，可以把任何两个纯函数结合到一起。当然你也可以扩展出组合三个函数的“三面胶”，甚至“四面胶”“N面胶”。
+
+
 ```
 var g = function(x){ return x.length; };
 var f = function(x){ return x === 4; };
