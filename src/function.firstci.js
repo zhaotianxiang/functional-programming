@@ -42,3 +42,17 @@ const validArticles = articles =>
 // 对未来的项目更友好
 const compact = xs => xs.filter(x => x !== null && x !== undefined);
 // 在命名的时候，我们特别容易把自己限定在特定的数据上（本例中是 articles）。这种现象很常见，也是重复造轮子的一大原因。
+
+
+// 纯函数
+// 不纯的
+var minimum = 21;
+
+var checkAge = function(age) {
+  return age >= minimum;
+};
+// 纯的
+var checkAge = function(age) {
+  var minimum = 21;
+  return age >= minimum;
+};

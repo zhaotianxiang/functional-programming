@@ -9,6 +9,14 @@
 
 3. [Lambda Calculus](https://github.com/zhaotianxiang/functional-programming/blob/master/doc/lambda.calculus.md)
 
+4. [Normal prinpile](https://github.com/zhaotianxiang/functional-programming/blob/master/doc/normal.prinpile.md)
+
+3. [Pure Function](https://github.com/zhaotianxiang/functional-programming/blob/master/doc/pure.function.md)
+
+3. [Seagulls](https://github.com/zhaotianxiang/functional-programming/blob/master/doc/seagulls.md)
+
+3. [Container](https://github.com/zhaotianxiang/functional-programming/blob/master/doc/tupperware.md)
+
 
 ### 概述
 
